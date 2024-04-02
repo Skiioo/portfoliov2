@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0;
+}
+@font-face {
+  font-family: "Righteous";
+  src: url(public/Righteous-Regular.ttf);
+
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Outfit;
+  src: url(public/Outfit-Bold.ttf);
+}
