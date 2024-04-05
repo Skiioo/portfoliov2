@@ -8,6 +8,9 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './pages/home/home.component';
 import { RealisationComponent } from './pages/realisation/realisation.component';
+import { BackgrowndComponent } from './components/backgrownd/backgrownd.component';
+import { CompetencesComponent } from './pages/competences/competences.component';
+import { ContactComponent } from './pages/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +18,10 @@ import { RealisationComponent } from './pages/realisation/realisation.component'
     NavbarComponent,
     FooterComponent,
     HomeComponent,
-    RealisationComponent
+    RealisationComponent,
+    BackgrowndComponent,
+    CompetencesComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

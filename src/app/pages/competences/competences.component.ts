@@ -1,12 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-realisation',
-  templateUrl: './realisation.component.html',
-  styleUrl: './realisation.component.css'
+  selector: 'app-competences',
+  templateUrl: './competences.component.html',
+  styleUrl: './competences.component.css'
 })
-export class RealisationComponent implements OnInit{
-
+export class CompetencesComponent implements OnInit {
 
   ngOnInit(): void {
     window.scrollTo(0, 0);
@@ -19,4 +18,5 @@ export class RealisationComponent implements OnInit{
   stopAnimation(): void {
     // Votre code pour arrêter l'animation ici
   }
+
 }

@@ -1,9 +1,3 @@
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 .navbar {
   display: flex;
   width: 100%;
@@ -14,19 +8,96 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  z-index: 1;
 }
 .nav {
   display: flex;
 }
 
-.buttonnav {
-  display: flex;
-  align-items: center;
-  width: fit-content;
-
-  margin-right: 30px;
-  font-family: Righteous;
+.lien::after {
+  content: "";
+  display: block;
+  transform: scaleX(0);
+  height: 2px;
+  background-color: white;
+  transition: transform 0.3s ease-out;
+  transform-origin: left;
 }
-.buttonnav:hover {
+.lien:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+  height: 2px;
+}
+.lien:hover {
   cursor: pointer;
+  height: 2px;
+}
+.Accueil::after {
+  content: "" !important;
+  display: block !important;
+  height: 3px !important;
+  background-color: white !important;
+  color: rgb(186, 186, 186);
+  width: 100% !important;
+}
+.lien {
+  font-size: clamp(0.7rem, 1.1vw, 2rem);
+  font-family: "Righteous";
+  padding-left: 20px;
+  padding-right: 20px;
+  transition-property: "transform";
+  transition-duration: 0.2s;
+  height: fit-content;
+  text-decoration: none;
+  color: white;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-name: animeAcceuil;
+  animation-iteration-count: 1;
+  margin-top: 3.5vh;
+}
+.logo {
+  width: 90px;
+  position: absolute;
+  margin-left: 20px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+@keyframes animelogo {
+  0% {
+    margin-left: -100px;
+  }
+  100% {
+    margin-left: 15px;
+  }
+}
+.animate-on-load {
+  animation: animelogo 1s, animeAcceuil 1s, animation 1s;
+}
+
+@keyframes animeAcceuils {
+  0% {
+    margin-top: -50px;
+  }
+  100% {
+    margin-top: 0px;
+  }
+}
+
+@keyframes animation {
+  25% {
+    margin-top: -30px;
+  }
+  50% {
+    margin-top: 0px;
+  }
+  75% {
+    margin-top: -30px;
+  }
+  100% {
+    margin-top: 0px;
+  }
 }

@@ -1,1 +1,100 @@
-
+.Logoprinc {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+.Logoprinc img {
+  margin-top: 5em;
+  width: 20vh;
+  height: auto;
+}
+.présnomprenom {
+  font-size: clamp(2rem, 5em, 10rem);
+  font-family: "Righteous";
+  text-align: center;
+  margin-top: 5vh;
+}
+.blockprés {
+  width: fit-content;
+  display: flex;
+  margin-top: 15em;
+  margin-left: auto;
+  margin-right: auto;
+}
+.blocknomprenom {
+  margin-right: 15em;
+}
+.imgprés {
+  width: fit-content;
+}
+.imgprés img {
+  width: 35vh;
+  height: auto;
+  border-radius: 50px;
+  animation: moveUpDown 5s ease-in-out infinite;
+}
+@keyframes moveUpDown {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(50px);
+  }
+}
+.text-pres {
+  width: clamp(20em, 60vw, 60em);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 250px;
+}
+.text-pres h1 {
+  font-family: "Righteous";
+}
+.text-pres p {
+  font-family: "Righteous";
+  font-size: 1.5em;
+  text-shadow: -1px 0 rgb(255, 255, rgb) (255, 255, 255),
+    0 1px rgb(255, 255, 255), 1px 0 rgb(255, 255, 255),
+    0 -1px rgb(255, 255, 255);
+}
+.arrow_down_home {
+  width: 60px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5em;
+  animation: arrowanimhome 2s infinite;
+  position: absolute;
+}
+.div-arrow {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+@keyframes arrowanimhome {
+  0% {
+    margin-top: 100px;
+  }
+  40% {
+    margin-top: 100px;
+  }
+  65% {
+    margin-top: 100px;
+  }
+  70% {
+    margin-top: 110px;
+  }
+  80% {
+    margin-top: 100px;
+  }
+  90% {
+    margin-top: 110px;
+  }
+  100% {
+    margin-top: 100px;
+  }
+}
+.stop-animation {
+  animation-play-state: paused !important;
+}

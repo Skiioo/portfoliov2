@@ -1,0 +1,48 @@
+.footer {
+  width: 100%;
+  height: 11em;
+  background-color: black;
+  margin-top: 15em;
+  bottom: 0;
+  padding-top: 15px;
+}
+.text-footer {
+  width: fit-content;
+  font-size: 1.5em;
+  font-family: "Righteous";
+  text-align: center;
+  margin-top: 50px;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+}
+.logos {
+  display: flex;
+  margin-left: 100px;
+  width: fit-content;
+  margin-top: -50px;
+}
+.logo_link:hover {
+  cursor: pointer;
+  scale: 1.1;
+}
+.logo_link {
+  width: 50px;
+  height: auto;
+  padding-right: 25px;
+  padding-left: 25px;
+  transition-property: scale;
+  transition-duration: 0.2s;
+}
+.logo_git_hub:hover {
+  cursor: pointer;
+  scale: 1.1;
+}
+.logo_git_hub {
+  width: 50px;
+  height: auto;
+  padding-right: 25px;
+  padding-left: 25px;
+  transition-property: scale;
+  transition-duration: 0.2s;
+}
