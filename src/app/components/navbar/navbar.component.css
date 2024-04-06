@@ -101,3 +101,9 @@
     margin-top: 0px;
   }
 }
+@media (max-width: 1000px) {
+  .logo {
+    width: 70px;
+    display: none;
+  }
+}

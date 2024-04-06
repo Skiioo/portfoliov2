@@ -9,7 +9,7 @@
   height: auto;
 }
 .présnomprenom {
-  font-size: clamp(2rem, 5em, 10rem);
+  font-size: 65px;
   font-family: "Righteous";
   text-align: center;
   margin-top: 5vh;
@@ -50,13 +50,15 @@
 }
 .text-pres h1 {
   font-family: "Righteous";
+  font-size: 40px;
 }
 .text-pres p {
   font-family: "Righteous";
-  font-size: 1.5em;
+  font-size: clamp(1em, 2vw, 2em);
   text-shadow: -1px 0 rgb(255, 255, rgb) (255, 255, 255),
     0 1px rgb(255, 255, 255), 1px 0 rgb(255, 255, 255),
     0 -1px rgb(255, 255, 255);
+  margin-top: 20px;
 }
 .arrow_down_home {
   width: 60px;
@@ -97,4 +99,47 @@
 }
 .stop-animation {
   animation-play-state: paused !important;
+}
+
+@media (max-width: 1000px) {
+  .text-pres {
+    margin-top: 300 px;
+  }
+  .blockprés {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    margin-top: 100px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .blocknomprenom {
+    margin-right: auto;
+    margin-left: auto;
+    width: fit-content;
+  }
+  .imgprés img {
+    width: 20vh;
+  }
+  .imgprés {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .présnomprenom {
+    font-size: clamp(1.5rem, 4em, 7rem);
+  }
+  .text-pres h1 {
+    font-size: 30px;
+  }
+  .text-pres p {
+    font-size: clamp(1em, 1.5vw, 1.5em);
+  }
+  .div-arrow {
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

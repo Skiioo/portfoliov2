@@ -22,6 +22,7 @@
   text-decoration: none;
   color: black;
   background-color: white;
+  border-width: 2px;
 }
 .big-button-real:hover {
   transform: translate(1rem, 1rem);
@@ -51,4 +52,55 @@
   margin-top: 115px;
   font-family: "Righteous";
   font-size: 25px;
+}
+
+@media (max-width: 1000px) {
+  .div-big-button {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    margin-bottom: 250px;
+    gap: 50px;
+  }
+  .big-button-real {
+    width: 300px;
+    height: 300px;
+    border-radius: 50px;
+    border-color: black;
+    border-style: solid;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border-width: 2px;
+  }
+  .big-button-real:hover {
+    transform: translate(1rem, 1rem);
+    box-shadow: none;
+    cursor: pointer;
+  }
+  .button1 {
+    transition-duration: 0.2s;
+    box-shadow: 26px 24px 0px -3px rgba(0, 0, 0, 0.3);
+  }
+  .button1:hover {
+    transform: translate(1.5rem, 1.5rem);
+    box-shadow: none;
+  }
+  .button2 {
+    transition-duration: 0.2s;
+    box-shadow: 26px 24px 0px -3px rgba(0, 0, 0, 0.3);
+  }
+  .titre_projet {
+    width: fit-content;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 115px;
+    font-family: "Righteous";
+    font-size: 25px;
+  }
 }

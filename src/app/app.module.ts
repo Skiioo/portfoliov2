@@ -11,6 +11,8 @@ import { RealisationComponent } from './pages/realisation/realisation.component'
 import { BackgrowndComponent } from './components/backgrownd/backgrownd.component';
 import { CompetencesComponent } from './pages/competences/competences.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { RealuniallComponent } from './pages/realuni/realuniall/realuniall.component';
+import { RealpersoallComponent } from './pages/realperso/realpersoall/realpersoall.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { ContactComponent } from './pages/contact/contact.component';
     RealisationComponent,
     BackgrowndComponent,
     CompetencesComponent,
-    ContactComponent
+    ContactComponent,
+    RealuniallComponent,
+    RealpersoallComponent
   ],
   imports: [
     BrowserModule,

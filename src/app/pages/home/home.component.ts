@@ -1,11 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, AfterViewInit } from '@angular/core';
+import AOS from 'aos';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrl: './home.component.css'
+  styleUrls: ['./home.component.css']
 })
-export class HomeComponent implements OnInit{
+export class HomeComponent implements AfterViewInit {
+
+  ngAfterViewInit() {
+    AOS.init();
+  }
 
   scrollToBottom(): void {
     const element = document.getElementById('text-pres');
@@ -24,19 +29,4 @@ export class HomeComponent implements OnInit{
       element.classList.add('stop-animation');
     }
   }
-
-  ngOnInit(): void {
-    window.scrollTo(0, 0);
-  }
-
-  scrollToBottomm(): void {
-    // Votre code pour faire défiler vers le bas ici
-  }
-
-  stopAnimationn(): void {
-    // Votre code pour arrêter l'animation ici
-  }
-  
- 
-
 }
