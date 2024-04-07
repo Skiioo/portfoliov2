@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, PLATFORM_ID, Inject } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
 
 @Component({
   selector: 'app-competences',
@@ -7,8 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CompetencesComponent implements OnInit {
 
+  constructor(@Inject(PLATFORM_ID) private platformId: Object) { }
+
   ngOnInit(): void {
-    window.scrollTo(0, 0);
+    if (isPlatformBrowser(this.platformId)) {
+      window.scrollTo(0, 0);
+    }
   }
 
   scrollToBottom(): void {

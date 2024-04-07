@@ -1,0 +1,77 @@
+.titre-real {
+  font-family: "Righteous";
+  width: fit-content;
+  margin: 100px auto 50px;
+  font-size: clamp(2em, 4vw, 2.5em);
+}
+.container {
+  width: clamp(300px, 80%, 700px);
+  font-family: "Righteous";
+  margin-left: auto;
+  margin-right: auto;
+}
+.container h1 {
+  font-size: clamp(1.5em, 4vw, 2em);
+  margin-bottom: 20px;
+}
+.competences {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+.competences div {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 10px;
+  font-size: 17px;
+  border-color: black;
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.1px);
+}
+
+.div2 {
+  margin-top: 100px;
+}
+
+.anim1 {
+  animation: moveUpDown 5s ease-in-out infinite;
+}
+.anim2 {
+  animation: moveUpDown 5s ease-in-out infinite;
+  animation-delay: 0.5s;
+}
+.anim3 {
+  animation: moveUpDown 5s ease-in-out infinite;
+  animation-delay: 1s;
+}
+.anim4 {
+  animation: moveUpDown 5s ease-in-out infinite;
+  animation-delay: 1.5s;
+}
+.anim5 {
+  animation: moveUpDown 5s ease-in-out infinite;
+  animation-delay: 2s;
+}
+.anim6 {
+  animation: moveUpDown 5s ease-in-out infinite;
+  animation-delay: 2.5s;
+}
+.anim6 {
+  animation: moveUpDown 5s ease-in-out infinite;
+  animation-delay: 3s;
+}
+
+@keyframes moveUpDown {
+  0%,
+  100% {
+    transform: translateY(-10);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}

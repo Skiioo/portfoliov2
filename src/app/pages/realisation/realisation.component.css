@@ -21,8 +21,9 @@
   border-style: solid;
   text-decoration: none;
   color: black;
-  background-color: white;
   border-width: 2px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0);
+  backdrop-filter: blur(25.1px);
 }
 .big-button-real:hover {
   transform: translate(1rem, 1rem);
@@ -73,7 +74,6 @@
     border-style: solid;
     text-decoration: none;
     color: black;
-    background-color: white;
     border-width: 2px;
   }
   .big-button-real:hover {

@@ -106,4 +106,22 @@
     width: 70px;
     display: none;
   }
+
+  .lien {
+    font-size: clamp(0.7rem, 1.1vw, 2rem);
+    font-family: "Righteous";
+    padding-left: 20px;
+    padding-right: 20px;
+    transition-property: "transform";
+    transition-duration: 0.2s;
+    height: fit-content;
+    text-decoration: none;
+    color: white;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-name: animeAcceuil;
+    animation-iteration-count: 1;
+    margin-top: 3.5vh;
+    width: max-content;
+  }
 }

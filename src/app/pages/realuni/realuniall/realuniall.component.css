@@ -1,0 +1,190 @@
+.titre-real {
+  font-family: "Righteous";
+  width: fit-content;
+  margin: 100px auto 50px;
+  font-size: clamp(2em, 4vw, 2.5em);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 3fr);
+  grid-gap: 20px;
+  grid-auto-rows: minmax(200px, auto);
+  margin: 50px;
+  margin-bottom: 350px;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.div-container {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.items {
+  border-color: black;
+  border-style: solid;
+  border-radius: 20px;
+  border-width: 2px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10.1px);
+  -webkit-backdrop-filter: blur(10.1px);
+}
+.items:hover {
+  cursor: pointer;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.bg1 {
+  background-image: url("../../../../assets/img/KIK.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  filter: blur(10px);
+}
+.item1:hover .bg1 {
+  opacity: 1;
+  filter: blur(10px);
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.items:hover .overlay {
+  opacity: 1;
+}
+
+.item5 {
+  grid-column: 3;
+  grid-row: 2;
+}
+.item6 {
+  grid-column: 2;
+  grid-row: 2;
+}
+.bg2 {
+  background-image: url("../../../../assets/img/SAE_103_page4.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  filter: blur(10px);
+}
+.item2:hover .bg2 {
+  opacity: 1;
+  filter: blur(10px);
+}
+.bg3 {
+  background-image: url("../../../../assets/img/Pub_Samsung.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  filter: blur(10px);
+}
+.item3:hover .bg3 {
+  opacity: 1;
+  filter: blur(10px);
+}
+.bg4 {
+  background-image: url("../../../../assets/img/Brie_Happy.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  filter: blur(10px);
+}
+.item4:hover .bg4 {
+  opacity: 1;
+  filter: blur(10px);
+}
+.bg5 {
+  background-image: url("../../../../assets/img/SAE 401 Dogon.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  filter: blur(10px);
+}
+.item5:hover .bg5 {
+  opacity: 1;
+  filter: blur(10px);
+}
+.bg6 {
+  background-image: url("../../../../assets/img/TreeSushi.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  filter: blur(10px);
+}
+.item6:hover .bg6 {
+  opacity: 1;
+  filter: blur(10px);
+}
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  font-family: "Righteous";
+  text-align: center;
+  z-index: 2;
+  transition: color 0.3s ease-in-out;
+}
+.items:hover .text {
+  color: white;
+}
+
+@media (max-width: 1000px) {
+  .container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .item1 {
+    grid-column: 1 !important;
+    grid-row: 1 !important;
+  }
+  .item2 {
+    grid-column: 1 !important;
+    grid-row: 2 !important;
+  }
+  .item3 {
+    grid-column: 1 !important;
+    grid-row: 3 !important;
+  }
+  .item4 {
+    grid-column: 1 !important;
+    grid-row: 4 !important;
+  }
+  .item5 {
+    grid-column: 1 !important;
+    grid-row: 5 !important;
+  }
+  .item6 {
+    grid-column: 1 !important;
+    grid-row: 6 !important;
+  }
+}
