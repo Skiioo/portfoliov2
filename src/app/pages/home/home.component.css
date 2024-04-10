@@ -135,7 +135,7 @@
     font-size: 30px;
   }
   .text-pres p {
-    font-size: clamp(1em, 1.5vw, 1.5em);
+    font-size: clamp(1.2em, 1.5vw, 1.5em);
   }
   .div-arrow {
     width: 50px;

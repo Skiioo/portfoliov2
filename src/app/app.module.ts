@@ -13,6 +13,16 @@ import { CompetencesComponent } from './pages/competences/competences.component'
 import { ContactComponent } from './pages/contact/contact.component';
 import { RealuniallComponent } from './pages/realuni/realuniall/realuniall.component';
 import { RealpersoallComponent } from './pages/realperso/realpersoall/realpersoall.component';
+import { BlenderComponent } from './pages/realperso/blender/blender.component';
+import { ModelsComponent } from './components/models/models.component';
+import { AfficheICDComponent } from './pages/realperso/affiche-icd/affiche-icd.component';
+import { AfficheAComponent } from './pages/realuni/affiche-a/affiche-a.component';
+import { SliderAfficheComponent } from './components/slider-affiche/slider-affiche.component';
+import { MagazineComponent } from './pages/realuni/magazine/magazine.component';
+import { SliderMagazinComponent } from './components/slider-magazin/slider-magazin.component';
+
+
+
 
 @NgModule({
   declarations: [
@@ -25,7 +35,17 @@ import { RealpersoallComponent } from './pages/realperso/realpersoall/realpersoa
     CompetencesComponent,
     ContactComponent,
     RealuniallComponent,
-    RealpersoallComponent
+    RealpersoallComponent,
+    BlenderComponent,
+    ModelsComponent,
+    AfficheICDComponent,
+    AfficheAComponent,
+    SliderAfficheComponent,
+    MagazineComponent,
+    SliderMagazinComponent,
+  
+ 
+   
   ],
   imports: [
     BrowserModule,

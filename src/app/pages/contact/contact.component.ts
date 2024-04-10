@@ -17,10 +17,14 @@ export class ContactComponent implements OnInit {
   }
 
   scrollToBottom(): void {
-    // Votre code pour faire défiler vers le bas ici
+    if (isPlatformBrowser(this.platformId)) {
+      // Votre code pour faire défiler vers le bas ici
+    }
   }
 
   stopAnimation(): void {
-    // Votre code pour arrêter l'animation ici
+    if (isPlatformBrowser(this.platformId)) {
+      // Votre code pour arrêter l'animation ici
+    }
   }
 }
