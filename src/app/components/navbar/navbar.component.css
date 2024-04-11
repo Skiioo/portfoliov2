@@ -54,7 +54,7 @@
   color: white;
   animation-duration: 2s;
   animation-timing-function: ease;
-  animation-name: animeAcceuil;
+  animation-name: animeAcceuils;
   animation-iteration-count: 1;
   margin-top: 3.5vh;
 }
@@ -75,7 +75,7 @@
   }
 }
 .animate-on-load {
-  animation: animelogo 1s, animeAcceuil 1s, animation 1s;
+  animation: animelogo 1s, animation 1s;
 }
 
 @keyframes animeAcceuils {
@@ -83,7 +83,7 @@
     margin-top: -50px;
   }
   100% {
-    margin-top: 0px;
+    margin-top: 27px;
   }
 }
 
@@ -101,27 +101,92 @@
     margin-top: 0px;
   }
 }
+.burger {
+  display: none;
+}
+.menu {
+  display: none;
+}
 @media (max-width: 1000px) {
-  .logo {
-    width: 70px;
+  .lien {
     display: none;
   }
+  .logo {
+    width: 90px;
+    margin-top: 10px;
 
-  .lien {
-    font-size: clamp(0.7rem, 1.1vw, 2rem);
+    margin-left: 0px;
+  }
+  .div-logo {
+    width: fit-content;
+    margin-left: 20px;
+  }
+
+  .burger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 2rem;
+    height: 2rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 10;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 30px;
+
+    span {
+      width: 40px;
+      height: 0.25rem;
+      background: #ffffff;
+      border-radius: 10px;
+      transition: all 0.3s linear;
+      position: relative;
+      transform-origin: 1px;
+    }
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    z-index: 1;
+    background-color: black;
+    margin-top: 80px;
+    gap: 30px;
+  }
+
+  .menu.open {
+    width: 100%;
+  }
+  .burger {
+    display: flex;
+  }
+  .container-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .button-menu {
+    font-size: 30px;
     font-family: "Righteous";
-    padding-left: 20px;
-    padding-right: 20px;
-    transition-property: "transform";
-    transition-duration: 0.2s;
-    height: fit-content;
-    text-decoration: none;
-    color: white;
-    animation-duration: 2s;
-    animation-timing-function: ease;
-    animation-name: animeAcceuil;
-    animation-iteration-count: 1;
-    margin-top: 3.5vh;
-    width: max-content;
+    background-color: black;
+    padding: 20px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    border-top-color: white;
+    border-top-width: 1px;
+    border-top-style: solid;
   }
 }

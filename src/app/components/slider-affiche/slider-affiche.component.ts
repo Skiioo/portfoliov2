@@ -35,7 +35,7 @@ export class SliderAfficheComponent {
   ngAfterViewInit() {
   if (this.sliderafficheContent) {
     const secondImage = this.sliderafficheContent.nativeElement.children[1];
-    this.sliderafficheContent.nativeElement.scrollLeft = secondImage.offsetLeft;
+    this.sliderafficheContent.nativeElement.scrollLeft = secondImage.offsetLeft; 
   }
 }
 }

@@ -27,7 +27,7 @@
 .logos {
   display: flex;
   flex-direction: column;
-  gap: 3 0px;
+  gap: 30px;
 }
 .github {
   width: 70px;

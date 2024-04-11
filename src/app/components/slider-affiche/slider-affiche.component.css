@@ -48,7 +48,6 @@
   width: 100%;
   height: auto;
   display: block;
-  animation: slide 1s ease-in-out;
 }
 .slider_content::-webkit-scrollbar {
   height: 10px; /* Hauteur de la barre de défilement */

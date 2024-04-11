@@ -1,0 +1,85 @@
+.slider {
+  position: relative;
+  overflow: visible;
+  width: 500px;
+  height: auto;
+}
+
+.slider_nav {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  pointer-events: none;
+}
+
+.slider_nav_button {
+  pointer-events: all;
+  background: rgba(255, 255, 255, 0.7);
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.slider_nav_button_previous {
+  transform: translateX(-80%) translateY(-50%);
+}
+
+.slider_nav_button_next {
+  transform: translateX(80%) translateY(-50%);
+}
+
+.slider_content {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.slider_content_item {
+  flex: none;
+  width: 100%;
+  scroll-snap-align: start;
+}
+
+.slider_content_item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.slider_content::-webkit-scrollbar {
+  height: 10px; /* Hauteur de la barre de défilement */
+  background: #f5f5f5; /* Couleur de fond de la barre de défilement */
+}
+
+.slider_content::-webkit-scrollbar-thumb {
+  background: #000000; /* Couleur du curseur de défilement */
+  border-radius: 5px; /* Arrondit les coins du curseur de défilement */
+}
+
+.slider_content::-webkit-scrollbar-thumb:hover {
+  background: #323232; /* Couleur du curseur de défilement lorsqu'il est survolé */
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@media screen and (max-width: 1000px) {
+  .slider_nav {
+    display: none;
+  }
+
+  .slider_content_item img {
+    animation: slide 1s ease-in-out;
+  }
+  .slider {
+    width: 350px;
+  }
+}

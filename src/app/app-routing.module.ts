@@ -14,6 +14,10 @@ import { ModelsComponent } from './components/models/models.component';
 import { AfficheICDComponent } from './pages/realperso/affiche-icd/affiche-icd.component';
 import { AfficheAComponent } from './pages/realuni/affiche-a/affiche-a.component';
 import { MagazineComponent } from './pages/realuni/magazine/magazine.component';
+import { PubComponent } from './pages/realuni/pub/pub.component';
+import { WebdocComponent } from './pages/realuni/webdoc/webdoc.component';
+import { ThreesushiComponent } from './pages/realuni/threesushi/threesushi.component';
+
 
 
 
@@ -31,6 +35,10 @@ const routes: Routes = [
   { path: 'affiche-icd', component: AfficheICDComponent },
   { path: 'affiche-a', component: AfficheAComponent },
   { path: 'magazine', component: MagazineComponent },
+  { path: 'pub', component: PubComponent },
+  { path: 'webdoc', component: WebdocComponent },
+  { path: 'threesushi', component: ThreesushiComponent },
+  
   
 
 

@@ -3,12 +3,12 @@ import { Component, ViewChild, ElementRef, Input, AfterViewInit } from '@angular
 @Component({
   selector: 'app-slider-magazin',
   templateUrl: './slider-magazin.component.html',
-  styleUrl: './slider-magazin.component.css'
+  styleUrl: './slider-magazin.component.css' 
 })
 export class SliderMagazinComponent {
 
   @ViewChild('slidermagazinContent') slidermagazinContent?: ElementRef;
-  @Input() items?: { src: string }[];
+  @Input() items?: { src: string }[]; 
   currentIndex = 1;
   
 

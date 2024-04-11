@@ -1,5 +1,5 @@
 <div class="navbar">
-  <div>
+  <div class="div-logo">
     <img
       class="logo"
       routerLink="/home"
@@ -25,5 +25,45 @@
     >
       Mon CV
     </a>
+  </div>
+  <button (click)="isMenuOpen = !isMenuOpen" class="burger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+  <div class="menu" [class.open]="isMenuOpen">
+    <div class="container-menu">
+      <div class="button-menu" routerLink="/home" (click)="isMenuOpen = false">
+        À propos de moi
+      </div>
+      <div
+        class="button-menu"
+        routerLink="/realisation"
+        (click)="isMenuOpen = false"
+      >
+        Réalisation
+      </div>
+      <div
+        class="button-menu"
+        routerLink="/competences"
+        (click)="isMenuOpen = false"
+      >
+        Compétences
+      </div>
+      <div
+        class="button-menu"
+        routerLink="/contact"
+        (click)="isMenuOpen = false"
+      >
+        Contact
+      </div>
+      <a
+        class="button-menu"
+        href="../../../assets/img/MERLETTI_Sacha_CV.png"
+        target="_blank"
+      >
+        Mon CV
+      </a>
+    </div>
   </div>
 </div>

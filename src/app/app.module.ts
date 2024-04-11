@@ -20,6 +20,12 @@ import { AfficheAComponent } from './pages/realuni/affiche-a/affiche-a.component
 import { SliderAfficheComponent } from './components/slider-affiche/slider-affiche.component';
 import { MagazineComponent } from './pages/realuni/magazine/magazine.component';
 import { SliderMagazinComponent } from './components/slider-magazin/slider-magazin.component';
+import { PubComponent } from './pages/realuni/pub/pub.component';
+import { WebdocComponent } from './pages/realuni/webdoc/webdoc.component';
+
+import { ThreesushiComponent } from './pages/realuni/threesushi/threesushi.component';
+import { SliderThreeSushiComponent } from './components/slider-three-sushi/slider-three-sushi.component';
+
 
 
 
@@ -43,6 +49,12 @@ import { SliderMagazinComponent } from './components/slider-magazin/slider-magaz
     SliderAfficheComponent,
     MagazineComponent,
     SliderMagazinComponent,
+    PubComponent,
+    WebdocComponent,
+  
+    ThreesushiComponent,
+    SliderThreeSushiComponent,
+
   
  
    
