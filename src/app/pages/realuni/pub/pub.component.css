@@ -40,8 +40,6 @@
     width: 100%;
     font-size: 20px;
     text-align: justify;
-    padding-left: 20px;
-    padding-right: 20px;
   }
   .container img {
     width: 300px;
@@ -53,5 +51,13 @@
   }
   .texte {
     margin-top: 50px;
+  }
+  .video {
+    width: 400px;
+    height: auto;
+  }
+  .texte p {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
