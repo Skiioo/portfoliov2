@@ -79,6 +79,9 @@
   grid-column: 2;
   grid-row: 2;
 }
+.item5 a {
+  color: black;
+}
 .bg2 {
   background-image: url("../../../../assets/img/SAE_103_page4.png");
   background-size: cover;
