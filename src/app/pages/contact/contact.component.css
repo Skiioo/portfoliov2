@@ -13,7 +13,7 @@
   width: fit-content;
   margin: 100px 0px 0px 200px;
 }
-.linkedin {
+.linkedin img {
   width: 65px;
   height: auto;
   margin-right: 10px;
@@ -29,7 +29,7 @@
   flex-direction: column;
   gap: 30px;
 }
-.github {
+.github img {
   width: 70px;
   height: auto;
   margin-right: 10px;

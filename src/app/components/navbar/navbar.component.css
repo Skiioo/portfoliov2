@@ -176,6 +176,10 @@
     align-items: center;
     margin-top: 20px;
   }
+  .container-menu a {
+    text-decoration: none;
+    color: white;
+  }
   .button-menu {
     font-size: 30px;
     font-family: "Righteous";
