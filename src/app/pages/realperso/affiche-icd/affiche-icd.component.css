@@ -56,4 +56,8 @@
     margin-left: auto;
     margin-right: auto;
   }
+  .texte p {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }

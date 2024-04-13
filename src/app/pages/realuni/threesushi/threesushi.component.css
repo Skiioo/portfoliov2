@@ -51,4 +51,8 @@
   .texte {
     margin-top: 50px;
   }
+  .texte p {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
