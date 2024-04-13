@@ -22,6 +22,9 @@
   border-radius: 20px;
   box-shadow: 26px 24px 0px -3px rgba(0, 0, 0, 0.3);
 }
+.texte p {
+  font-family: "Righteous";
+}
 
 @media screen and (max-width: 1000px) {
   .container {
@@ -32,15 +35,17 @@
     width: 100%;
     font-size: 20px;
     text-align: justify;
-    padding-left: 20px;
-    padding-right: 20px;
   }
   .container img {
-    width: 300px;
+    width: 250px;
     height: auto;
     transition-duration: 0.2s;
     transition-property: scale();
     border-radius: 20px;
     box-shadow: 26px 24px 0px -3px rgba(0, 0, 0, 0.3);
+  }
+  .texte p {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
