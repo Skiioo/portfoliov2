@@ -1,7 +1,7 @@
 import { Component, AfterViewInit, PLATFORM_ID, Inject } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 import { Router, NavigationEnd } from '@angular/router';
-import { filter } from 'rxjs';
+import { filter } from 'rxjs/operators';
 
 import AOS from 'aos';
 

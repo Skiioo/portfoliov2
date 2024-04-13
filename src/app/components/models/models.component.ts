@@ -3,6 +3,7 @@ import { GLTFLoader } from 'three-stdlib';
 import { OrbitControls } from 'three-stdlib';
 import { PerspectiveCamera, Scene, WebGLRenderer, AmbientLight, Vector3, TextureLoader } from 'three';
 import { isPlatformBrowser } from '@angular/common';
+import * as THREE from 'three'; // Import the necessary package for 'THREE'
 
 @Component({
   selector: 'app-models',
@@ -30,15 +31,12 @@ export class ModelsComponent implements OnInit, AfterViewInit {
       this.renderer = new WebGLRenderer({ antialias: true });
     }
   }
-
   ngOnInit(): void {
     if (isPlatformBrowser(this.platformId)) {
-      const loader = new TextureLoader();
-      loader.load('../../../assets/img/bg_model3D.jpg', (texture) => {
-        this.scene.background = texture;
-      });
+      this.scene.background = new THREE.Color(0x252525); // Remplacez 0x000000 par la couleur que vous voulez
 
-      this.renderer.setClearColor(0x040113); 
+  
+      this.renderer.setClearColor(0x000000); 
       this.addLights();
       this.loadModel();
     }
@@ -66,9 +64,9 @@ export class ModelsComponent implements OnInit, AfterViewInit {
   loadModel(): void {
     if (isPlatformBrowser(this.platformId)) {
       var loader = new GLTFLoader();
-      loader.load( '../../../assets/models/SAE402.glb', (gltf: any) => {
-        this.masque = gltf.scene;
-        this.masque.scale.set(6, 6, 6);
+      loader.load( '../../../assets/models/projet_vue_isometrique_bar.glb', (glb: any) => {
+        this.masque = glb.scene;
+        this.masque.scale.set(40, 40, 40);
         this.masque.position.y = -window.innerHeight / 10; 
         this.masque.position.x = -90; 
         this.masque.position.z = -0; 
@@ -88,8 +86,8 @@ export class ModelsComponent implements OnInit, AfterViewInit {
   }
 
   zoomIn(): void {
-    if (this.camera.position.z > 0) {
-      this.camera.position.z -= 2; 
+    if (this.camera.position.y > 0) {
+      this.camera.position.y -= 1; 
       requestAnimationFrame(() => this.zoomIn());
     }
   }
@@ -100,7 +98,7 @@ export class ModelsComponent implements OnInit, AfterViewInit {
       this.controls.update();
 
       if (this.masque && this.isRotating) {
-        this.masque.rotation.y += 0.005; 
+        this.masque.rotation.y += 0.001; 
       }
 
       this.renderer.render(this.scene, this.camera);
